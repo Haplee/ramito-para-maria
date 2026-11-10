@@ -43,9 +43,9 @@
           <path d="M318 268 C365 243 375 211 355 179 C315 196 300 230 318 268Z"/><path d="M320 263 Q342 220 352 189" fill="none" stroke="#d1d1ad" stroke-width="1.2"/>
         </g>
         <!-- Paper cone -->
-        <path d="M95 272 Q260 345 425 272 L333 494 Q260 520 187 494Z" fill="url(#wrap)" opacity=".98"/>
-        <path d="M95 272 Q155 330 260 347 L187 494Z" fill="url(#wrapShade)" opacity=".84"/>
-        <path d="M425 272 Q367 330 260 347 L333 494Z" fill="#d6beae" opacity=".65"/>
+        <path d="M95 272 Q260 345 425 272 L333 494 Q260 520 187 494Z" fill="url(#wrap)" opacity="1"/>
+        <path d="M95 272 Q155 330 260 347 L187 494Z" fill="url(#wrapShade)" opacity="1"/>
+        <path d="M425 272 Q367 330 260 347 L333 494Z" fill="#d6beae" opacity="1"/>
         <path d="M95 272 Q260 365 425 272" fill="none" stroke="#fff7ee" stroke-width="4" opacity=".8"/>
         <!-- Small foliage in front -->
         <g fill="#82957b" stroke="#536e5a" stroke-width="1.2">
