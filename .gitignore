@@ -1,0 +1,15 @@
+# Entorno local
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+build/
+.vercel/
+.cache/
+coverage/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

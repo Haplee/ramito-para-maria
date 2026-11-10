@@ -1,0 +1,11 @@
+{
+  "name":"Un ramito para María",
+  "short_name":"Ramito María",
+  "description":"Un pequeño regalo de violetas, hecho con cariño para María.",
+  "start_url":"/",
+  "scope":"/",
+  "display":"standalone",
+  "background_color":"#211724",
+  "theme_color":"#211724",
+  "icons":[{"src":"/app-icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#211724"><meta name="description" content="Un pequeño regalo para María. 9 de noviembre.">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/manifest.webmanifest"><meta name="mobile-web-app-capable" content="yes"><title>Un ramito para María</title>
+<style>
+:root{--night:#211724;--plum:#392941;--cream:#f7f0e7;--ink:#45344a;--lilac:#d5b9e1;--gold:#e7c995}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:auto}
+body{margin:0;min-height:100vh;min-height:100svh;background:linear-gradient(180deg,#302238 0%,#211724 44%,#1d151f 100%);color:#fff8f2;font-family:Georgia,'Times New Roman',serif;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+main{width:min(100%,620px);margin:auto;padding:calc(26px + env(safe-area-inset-top)) 19px calc(34px + env(safe-area-inset-bottom))}
+header{text-align:center}.eyebrow{font:600 10px system-ui;letter-spacing:.25em;text-transform:uppercase;color:var(--gold)}
+h1{font-size:clamp(43px,10vw,62px);line-height:.98;letter-spacing:-.045em;font-weight:400;margin:19px 0 12px}h1 em{color:var(--lilac)}
+.lead{max-width:390px;margin:auto;color:#e2d6e5;font-size:16px;line-height:1.65}
+.photo-frame{position:relative;margin:25px auto 0;width:min(100%,430px);padding:13px 9px 12px;border:1px solid #d9c3df70;border-radius:210px 210px 18px 18px;background:linear-gradient(160deg,#ffffff12,#ffffff04);box-shadow:0 16px 35px #09060d35;overflow:visible}
+.photo{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center;border-radius:4px;background:transparent;max-height:none}
+.photo-label{position:static;display:table;max-width:100%;white-space:normal;text-align:center;margin:10px auto 1px;padding:8px 16px;border-radius:30px;background:#211724e8;border:1px solid #e7d5e988;color:#f7eaf8;font-style:italic;font-size:14px}
+.note{text-align:center;color:#dfd0e2;font-size:15px;font-style:italic;line-height:1.6;margin:19px auto 0;max-width:380px}
+.section-mark{display:flex;justify-content:center;align-items:center;gap:13px;margin:29px 0 17px;color:#d0b0dd}.section-mark:before,.section-mark:after{content:"";width:42px;height:1px;background:#d0b0dd55}
+.open-area{text-align:center}.hint{font:600 9px system-ui;letter-spacing:.2em;text-transform:uppercase;color:#d8c7dd;margin:0 0 12px}
+.open-btn{appearance:none;border:1px solid #dfc5e6a8;border-radius:99px;background:linear-gradient(135deg,#785b83,#55405f);color:white;padding:16px 24px;min-height:54px;font:600 10px system-ui;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;touch-action:manipulation}
+.open-btn:active{background:#876894}.open-btn:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.letter{display:none;margin:22px auto 0}.letter.open{display:block}
+.paper{background:var(--cream);color:var(--ink);padding:29px clamp(21px,6vw,38px);border:1px solid #e3d5c9;border-radius:3px;box-shadow:0 13px 35px #08050d45}
+.paper-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.paper-kicker{font:700 9px system-ui;letter-spacing:.22em;text-transform:uppercase;color:#96739f}.paper-flower{font-size:21px;color:#9874a3}
+.paper h2{font-size:32px;font-weight:400;line-height:1.1;margin:0 0 22px;color:#503d56}
+.paper p{font-size:16px;line-height:1.72;margin:0 0 18px;overflow-wrap:break-word}
+.paper .sign{font-size:21px;font-style:italic;color:#805d8b;margin:25px 0 0}
+.little-seal{display:flex;justify-content:flex-end;margin-top:17px}.little-seal span{width:58px;height:58px;border:1px solid #c3a9cb;border-radius:50%;display:grid;place-items:center;text-align:center;color:#9874a3;font:italic 11px/1.2 Georgia;transform:rotate(-9deg)}
+.us{margin:30px 0 0;text-align:center}.overline{font:600 9px system-ui;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.us h2{font-size:27px;font-weight:400;margin:11px 0 17px;color:#f5eaf6}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.quality{border:1px solid #d8c2df45;background:#ffffff08;border-radius:12px;padding:14px 7px 13px}.quality .symbol{font-size:19px;color:#d9bce4}.quality strong{display:block;font-size:13px;font-weight:400;color:#f2e7f3;margin-top:7px}.quality small{display:block;font:10px system-ui;color:#cbbbd0;margin-top:4px}
+.ticket{margin:25px auto 0;max-width:450px;background:#f2e8dc;color:#4b3a4d;padding:19px 20px 16px;border-radius:4px;position:relative;box-shadow:0 12px 28px #0b071033}
+.ticket:before,.ticket:after{content:"";position:absolute;top:50%;width:17px;height:17px;background:#241a27;border-radius:50%;transform:translateY(-50%)}.ticket:before{left:-9px}.ticket:after{right:-9px}
+.ticket-head{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed #bda9b8;padding-bottom:11px;font:700 9px system-ui;letter-spacing:.18em;text-transform:uppercase;color:#8d6a96}
+.ticket h3{font-size:24px;font-weight:400;margin:13px 0 6px}.ticket p{font:13px/1.55 system-ui;color:#69576b;margin:0}
+.ticket-foot{display:flex;justify-content:space-between;gap:10px;border-top:1px dashed #bda9b8;margin-top:14px;padding-top:10px;color:#896b90;font:italic 12px Georgia}
+.closing{text-align:center;margin:29px auto 0;max-width:400px;color:#e4d7e7;font-size:16px;line-height:1.65;font-style:italic}.closing strong{display:block;color:#f0d9f1;font-size:20px;font-weight:400;margin-top:8px}
+footer{text-align:center;padding-top:27px;color:#cbbbd080;font:9px system-ui;letter-spacing:.18em;text-transform:uppercase}
+@media(max-width:430px){main{padding-left:16px;padding-right:16px}.lead{font-size:15px}.photo-frame{width:min(100%,390px);margin-top:22px;padding:11px 7px 10px;border-radius:190px 190px 16px 16px}.paper{padding:25px 20px}.paper p{font-size:15px;line-height:1.72;margin-bottom:17px}.paper h2{font-size:29px}.three{gap:7px}.quality{padding:12px 4px}.quality strong{font-size:12px}.quality small{font-size:9px}.us h2{font-size:24px}}
+@media(max-width:390px){.photo-frame{width:min(100%,370px);padding:10px 6px 9px;border-radius:180px 180px 15px 15px}.photo{border-radius:3px}.photo-label{font-size:13px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.install-overlay{position:fixed;inset:0;z-index:99;display:none;align-items:center;justify-content:center;padding:22px;background:#100b14bd}.install-overlay.show{display:flex}.install-card{width:min(100%,360px);padding:26px 22px 21px;text-align:center;border:1px solid #d9c0e0a0;border-radius:22px;background:linear-gradient(155deg,#49334f,#241a29);box-shadow:0 24px 70px #0008;color:#fff8f2}.install-icon{width:68px;height:68px;object-fit:cover;border-radius:17px;box-shadow:0 6px 20px #120b17a0}.install-card h2{font:italic 29px Georgia,serif;margin:15px 0 8px;color:#f2dff5}.install-card p{font:14px/1.55 system-ui;color:#e3d7e5;margin:0 0 17px}.install-actions{display:grid;gap:9px}.install-primary,.install-later{border-radius:99px;min-height:48px;padding:12px 17px;font:600 10px system-ui;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}.install-primary{border:1px solid #e5c9ec;background:linear-gradient(135deg,#876492,#60466b);color:white}.install-later{border:1px solid #d9c3df55;background:transparent;color:#e1d3e5}.petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:5}.petal{position:absolute;top:-24px;width:10px;height:15px;border-radius:80% 15% 80% 15%;background:linear-gradient(135deg,#ead5f2,#9871ad);opacity:.7;animation:petalFall linear forwards}@keyframes petalFall{to{transform:translate3d(var(--drift),110vh,0) rotate(620deg);opacity:.08}}.photo{cursor:pointer;transition:filter .35s,transform .35s}.photo.bloom{filter:drop-shadow(0 0 16px #d6a8e9);transform:scale(1.012)}.envelope-wrap{display:grid;place-items:center;margin:6px auto;min-height:150px}.envelope{position:relative;width:min(270px,82vw);height:145px;border:1px solid #c8a9d2;border-radius:7px;background:linear-gradient(145deg,#eadce9,#c9b1d0);box-shadow:0 13px 26px #08050d55;cursor:pointer}.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,#f5e9f4,#c6a9d0);clip-path:polygon(0 0,50% 58%,100% 0);transform-origin:top;transition:transform .8s;z-index:3}.envelope:after{content:"";position:absolute;inset:0;background:linear-gradient(35deg,#b795c2,#e6d4e9);clip-path:polygon(0 100%,50% 44%,100% 100%);z-index:2}.envelope.open:before{transform:rotateX(180deg);z-index:0}.envelope-label{position:absolute;z-index:4;left:0;right:0;top:18px;text-align:center;color:#634a6a;font:italic 15px Georgia}.envelope-seal{position:absolute;z-index:5;left:50%;top:56%;transform:translate(-50%,-50%);width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#dcbbe8,#80568e 70%);border:1px solid #f1dff5;color:white;font-size:20px;transition:opacity .3s}.envelope.open .envelope-seal{opacity:0}.envelope-hint{font:italic 13px Georgia;color:#e3d3e8;margin-top:12px}.paper p.type-line{min-height:1em}.surprise-line{border-top:1px solid #cdb8ce;margin-top:24px;padding-top:20px;color:#76557f;font-style:italic}.reveal-invite{text-align:center;margin:25px auto 0;color:#e8d9ec;font:italic 17px Georgia;line-height:1.6}.gift-flow{display:none;margin:27px auto 0;max-width:450px}.gift-flow.show{display:block;animation:giftIn .6s ease both}@keyframes giftIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}.scratch-ticket{position:relative;margin:0 auto 22px;background:#f2e8dc;color:#4b3a4d;padding:19px 18px 16px;border-radius:5px;box-shadow:0 12px 28px #0b071033;overflow:hidden}.scratch-ticket h3{font:400 24px Georgia;margin:13px 0 6px}.scratch-ticket p{font:13px/1.55 system-ui;color:#69576b;margin:0}.scratch-head,.scratch-foot{display:flex;justify-content:space-between;gap:10px;font:700 9px system-ui;letter-spacing:.16em;text-transform:uppercase;color:#8d6a96}.scratch-head{border-bottom:1px dashed #bda9b8;padding-bottom:11px}.scratch-foot{border-top:1px dashed #bda9b8;margin-top:12px;padding-top:10px}.scratch-area{position:relative;height:104px;margin:15px 0 9px;border-radius:5px;overflow:hidden;background:#e2d7e4}.scratch-area canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}.scratch-win{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:10px;color:#63486b;font:italic 18px/1.35 Georgia;background:#f7edf8}.scratch-help{text-align:center;font:10px system-ui;color:#8a728d;margin-bottom:5px}.replay-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:17px auto}.replay-row button{border:1px solid #d9c3df77;border-radius:99px;background:#ffffff0b;color:#f0e4f2;padding:11px 16px;font:600 9px system-ui;letter-spacing:.12em;text-transform:uppercase}@media(prefers-reduced-motion:reduce){.petal{display:none}.gift-flow.show{animation:none}}.letter.open .paper{animation:paperSlide .85s cubic-bezier(.2,.75,.25,1) both}@keyframes paperSlide{from{opacity:0;transform:translateY(-24px) scale(.985)}to{opacity:1;transform:none}}@media(prefers-reduced-motion:reduce){.letter.open .paper{animation:none}}
+.photo{display:block;width:min(100%,600px);height:auto;object-fit:contain;min-height:300px}
+.scratch-area{height:145px!important;background:linear-gradient(135deg,#e5e2e6,#aaa6ad 45%,#f5f2f5)!important;border:1px solid #b7aeba;box-shadow:inset 0 1px 5px #fff8}
+.scratch-area canvas{display:block!important;z-index:3;opacity:1;touch-action:none!important}
+.scratch-win{z-index:1;font-size:clamp(16px,4vw,20px)}
+.scratch-help{font-size:11px;letter-spacing:.03em}
+.envelope.open{transform:translateY(-2px)}
+.envelope.open:before{transform:rotateX(180deg)}
+.type-line{line-height:1.8}
+@media(prefers-reduced-motion:no-preference){.paper{transition:opacity .8s,transform .8s}.gift-flow.show{animation-duration:1s}}
+
+.photo{display:block;width:min(100%,600px);height:auto;min-height:0;object-fit:contain}
+.scratch-area{position:relative!important;height:145px!important;min-height:145px!important;overflow:hidden!important;background:#e8e0e9!important;border:1px solid #c4b4c8!important}
+.scratch-area canvas{position:absolute!important;inset:0!important;display:block!important;width:100%!important;height:100%!important;z-index:5!important;opacity:1!important;touch-action:none!important;pointer-events:auto!important;user-select:none!important;-webkit-user-select:none!important}
+.scratch-win{position:absolute!important;inset:0!important;z-index:1!important;display:grid!important;place-items:center!important}
+.scratch-help{position:relative;z-index:0}
+</style></head>
+<body><div class="petals" aria-hidden="true"></div><main>
+<header>
+<div class="eyebrow">9 de noviembre · Un detalle para ti</div>
+<h1>Un ramito<br><em>para María</em></h1>
+<p class="lead">Hoy quería dejarte algo bonito, aunque sea a través de una pantalla, para recordarte lo especial que eres para mí</p>
+</header>
+<figure class="photo-frame">
+<svg class="photo" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620" role="img" aria-label="Ramo de violetas moradas">
+<defs>
+ <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff8eb"/><stop offset=".48" stop-color="#e7d6c4"/><stop offset="1" stop-color="#c9b09d"/></linearGradient>
+ <linearGradient id="paper2" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#f9efe2"/><stop offset="1" stop-color="#d7c1ae"/></linearGradient>
+ <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9eaf89"/><stop offset="1" stop-color="#405c48"/></linearGradient>
+ <radialGradient id="petal" cx=".35" cy=".25"><stop stop-color="#ead4f4"/><stop offset=".48" stop-color="#a879c8"/><stop offset="1" stop-color="#56316f"/></radialGradient>
+ <radialGradient id="dark"><stop stop-color="#d7a9e9"/><stop offset="1" stop-color="#48245e"/></radialGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="10"/></filter>
+ <g id="flower">
+  <g fill="url(#petal)" stroke="#ead8f0" stroke-opacity=".35" stroke-width="1.2">
+   <ellipse cy="-19" rx="12" ry="23"/>
+   <ellipse cy="-19" rx="12" ry="23" transform="rotate(72)"/>
+   <ellipse cy="-19" rx="12" ry="23" transform="rotate(144)"/>
+   <ellipse cy="-19" rx="12" ry="23" transform="rotate(216)"/>
+   <ellipse cy="-19" rx="12" ry="23" transform="rotate(288)"/>
+  </g><circle r="5" fill="#f4d68e"/><circle r="2" fill="#56334d"/>
+  <path d="M0 3Q-3 13 0 22" stroke="#e9d4a5" stroke-width="1.2" fill="none" opacity=".7"/>
+ </g>
+ <g id="tiny"><g fill="#c6a0db"><circle r="5"/><circle cx="8" cy="-5" r="4"/><circle cx="-8" cy="-5" r="4"/><circle cx="0" cy="-13" r="4"/></g><circle r="2" fill="#f4d68e"/></g>
+</defs>
+<ellipse cx="300" cy="560" rx="190" ry="22" fill="#100b14" opacity=".24" filter="url(#shadow)"/>
+<!-- foliage -->
+<g fill="none" stroke="#597451" stroke-width="5" stroke-linecap="round">
+ <path d="M300 510Q245 350 150 205M300 510Q330 330 450 180M300 510Q280 300 280 140M300 510Q390 350 510 270M300 510Q210 360 85 300"/>
+</g>
+<g fill="url(#leaf)" stroke="#b0bf9b" stroke-opacity=".25" stroke-width="1.5">
+ <path d="M165 254Q76 236 76 158Q151 155 165 254Z"/><path d="M194 314Q100 330 61 269Q122 222 194 314Z"/>
+ <path d="M434 242Q450 152 526 140Q534 220 434 242Z"/><path d="M397 321Q487 286 535 343Q472 390 397 321Z"/>
+ <path d="M268 225Q204 157 233 93Q300 122 268 225Z"/><path d="M338 280Q383 194 451 207Q424 281 338 280Z"/>
+ <path d="M235 378Q143 363 128 431Q206 453 235 378Z"/><path d="M365 386Q444 347 485 411Q415 463 365 386Z"/>
+ <path d="M285 340Q220 280 250 230Q314 268 285 340Z"/>
+</g>
+<!-- tiny filler flowers -->
+<g opacity=".95">
+ <use href="#tiny" transform="translate(160 190) scale(1.2)"/><use href="#tiny" transform="translate(185 155) scale(.9)"/>
+ <use href="#tiny" transform="translate(415 170) scale(1.2)"/><use href="#tiny" transform="translate(448 145) scale(.8)"/>
+ <use href="#tiny" transform="translate(270 110) scale(1.05)"/><use href="#tiny" transform="translate(305 95) scale(.8)"/>
+ <use href="#tiny" transform="translate(105 285) scale(.9)"/><use href="#tiny" transform="translate(500 285) scale(.9)"/>
+</g>
+<!-- violet blooms -->
+<g>
+ <use href="#flower" transform="translate(205 250) rotate(-15) scale(1.05)"/>
+ <use href="#flower" transform="translate(285 205) rotate(12) scale(1.2)"/>
+ <use href="#flower" transform="translate(375 230) rotate(-8) scale(1.12)"/>
+ <use href="#flower" transform="translate(130 310) rotate(17) scale(.95)"/>
+ <use href="#flower" transform="translate(235 330) rotate(-8) scale(1.15)"/>
+ <use href="#flower" transform="translate(340 320) rotate(14) scale(1.2)"/>
+ <use href="#flower" transform="translate(450 315) rotate(-12) scale(1.0)"/>
+ <use href="#flower" transform="translate(175 390) rotate(8) scale(.9)"/>
+ <use href="#flower" transform="translate(285 405) rotate(-10) scale(1.12)"/>
+ <use href="#flower" transform="translate(400 400) rotate(16) scale(1.0)"/>
+</g>
+<!-- wrapper -->
+<path d="M100 345L245 470L300 580L356 470L505 345L440 530L300 610L160 530Z" fill="url(#paper)" stroke="#fff3e4" stroke-width="3"/>
+<path d="M100 345Q190 400 245 470L300 580L160 530Z" fill="url(#paper2)" opacity=".85"/>
+<path d="M505 345Q410 410 356 470L300 580L440 530Z" fill="#cdb7a7" opacity=".55"/>
+<path d="M160 530Q300 550 440 530L300 610Z" fill="#bda18f" opacity=".45"/>
+<!-- ribbon -->
+<path d="M292 500C240 450 185 466 210 510C232 546 278 523 300 507C322 523 368 546 390 510C415 466 360 450 308 500" fill="none" stroke="#a77cb0" stroke-width="15" stroke-linecap="round"/>
+<path d="M300 505Q270 558 246 587Q290 575 309 517M307 508Q340 555 370 578Q335 570 299 519" fill="#b98ac2" stroke="#e3c6e7" stroke-width="2"/>
+<circle cx="300" cy="506" r="13" fill="#8f659a" stroke="#e5c9e8" stroke-width="3"/>
+</svg>
+<figcaption class="photo-label">Un abrazo convertido en flores</figcaption>
+</figure>
+<p class="note">No son solo flores, es mi manera de mandarte un abrazo y sacarte una sonrisa</p>
+<div class="section-mark" aria-hidden="true">✿</div>
+<section class="open-area"><p class="hint">He guardado unas palabras para ti</p><div class="envelope-wrap"><button class="envelope" id="open" aria-expanded="false" aria-controls="letter" aria-label="Abrir el sobre"><span class="envelope-label">Una carta para ti</span><span class="envelope-seal">✿</span></button></div><p class="envelope-hint">Toca el sello para abrir tu carta</p></section>
+<section class="letter" id="letter" aria-hidden="true">
+<article class="paper">
+<div class="paper-top"><span class="paper-kicker">Unas palabras para ti</span><span class="paper-flower">✿</span></div>
+<h2>Mi niña ❤️</h2>
+<p>Aunque me lo hayas tenido que recordar tú, no quería dejar pasar este día sin darte tu ramito de violetas jajajajaja</p>
+<p>Quiero que sepas que eres una persona muy especial para mí, me encanta tenerte a mi lado, que nos apoyemos, que nos cuidemos, que compartamos nuestros días y que podamos reírnos juntos hasta de las tonterías más grandes</p>
+<p>Y lo último, el año que viene espero que no tenga que mandarte dos TikToks para conseguir tus violetas JAJAJAJAJAJA, y el sushi que me estoy comiendo te lo mando para darte un poquito de envidia, pero tranquila que también nos lo comeremos juntos cuando abra el Doruma</p>
+<p>Ojalá nunca te falten motivos para sonreír y nunca dudes de lo muchísimo que te quiero, porque entre todas las casualidades bonitas que me ha dado la vida, tú eres de mis favoritas</p>
+<p class="sign">Te quiero muchísimo, mi niña ❤️</p>
+<p class="surprise-line">“Actualmente nuestro pasado fue una película que nadie se esperaba, nuestro presente es perfecto y nuestro futuro no, siempre escogeré aunque no estemos todos los días en el mismo lugar, pero si en la misma casa porque tú eres mi hogar”</p><div class="little-seal"><span>con cariño<br>para ti</span></div>
+</article>
+</section>
+<section class="us">
+<div class="overline">Lo que quiero seguir compartiendo contigo</div>
+<h2>Las cosas que hacen bonito lo nuestro</h2>
+<div class="three">
+<div class="quality"><span class="symbol">♡</span><strong>Cuidarnos</strong><small>en los días buenos y no tan buenos</small></div>
+<div class="quality"><span class="symbol">☺</span><strong>Reírnos</strong><small>hasta por las tonterías</small></div>
+<div class="quality"><span class="symbol">∞</span><strong>Compartir</strong><small>muchos días más</small></div>
+</div>
+</section>
+<section class="reveal-invite" id="giftInvite" hidden><p>Todavía tengo un par de sorpresas para ti…</p><button class="open-btn" id="discoverGifts">Descubrir mis regalos</button></section><section class="gift-flow" id="giftFlow" aria-live="polite"><div class="scratch-ticket" id="ticketSushi"><div class="scratch-head"><span>Vale por una cita</span><span>09 · 11 · 2026</span></div><h3>Una cena de sushi para dos en Doruma</h3><p>Rasca la tarjeta para descubrir tu primera sorpresa</p><div class="scratch-area"><div class="scratch-win">¡Has ganado una cita conmigo!</div><canvas aria-label="Rasca aquí para descubrir el premio"></canvas></div><div class="scratch-help">Desliza el dedo o el ratón sobre la superficie plateada</div><div class="scratch-foot"><span>Una cita pendiente</span><span>Para nosotros ♥</span></div></div><div class="scratch-ticket" id="ticketDance" hidden><div class="scratch-head"><span>Vale por un baile</span><span>09 · 11 · 2026</span></div><h3>Un baile contigo</h3><p>La siguiente sorpresa también es para compartirla</p><div class="scratch-area"><div class="scratch-win">Prometo un baile contigo, aunque no sepa bailar, porque contigo todo merece la pena.</div><canvas aria-label="Rasca aquí para descubrir el premio"></canvas></div><div class="scratch-help">Desliza el dedo o el ratón sobre la superficie plateada</div><div class="scratch-foot"><span>Una canción para dos</span><span>Contigo ♥</span></div></div><div class="replay-row"><button id="replayLetter">Volver a leer la carta</button><button id="replayGifts">Volver a ver los regalos</button></div></section>
+<p class="closing">Y si hoy consigo sacarte una sonrisa, ya habrá merecido la pena.<strong>Te quiero, mi niña.</strong></p>
+<footer>Hecho con cariño · Para María</footer>
+<div class="install-overlay" id="installPrompt" role="dialog" aria-modal="true" aria-labelledby="installTitle"><div class="install-card"><img class="install-icon" src="/apple-touch-icon.png" alt="" width="68" height="68"><h2 id="installTitle">¿Me guardas contigo?</h2><p id="installDescription">Puedes tener este ramito en la pantalla de inicio, como una pequeña app hecha solo para ti.</p><div class="install-actions"><button class="install-primary" id="installAction">Añadirme a tu inicio ✿</button><button class="install-later" id="installLater">Ahora no, gracias ♥</button></div></div></div></main>
+<script>
+const button=document.getElementById('open'),letter=document.getElementById('letter');const paras=Array.from(letter.querySelectorAll('.paper p'));let typed=false,typing=false;function typeLetter(){if(typed||typing)return;typing=true;paras.forEach(p=>{p.dataset.full=p.textContent;p.textContent='';p.classList.add('type-line')});let pi=0,ci=0;function step(){if(pi>=paras.length){typing=false;typed=true;invite.hidden=false;return}const p=paras[pi],full=p.dataset.full;p.textContent=full.slice(0,++ci);if(ci>=full.length){pi++;ci=0}setTimeout(step,38)}step()}
+button.addEventListener('click',()=>{const opened=!letter.classList.contains('open');letter.classList.toggle('open',opened);button.classList.toggle('open',opened);letter.setAttribute('aria-hidden',String(!opened));button.setAttribute('aria-expanded',String(opened));if(opened)typeLetter()});
+function petals(){if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;const layer=document.querySelector('.petals');setInterval(()=>{if(layer.childElementCount>13)return;const el=document.createElement('i');el.className='petal';el.style.left=Math.random()*100+'vw';el.style.setProperty('--drift',(Math.random()*100-50)+'px');el.style.animationDuration=(7+Math.random()*7)+'s';layer.appendChild(el);setTimeout(()=>el.remove(),14500)},850)}document.querySelector('.photo').addEventListener('click',e=>{e.currentTarget.classList.add('bloom');setTimeout(()=>e.currentTarget.classList.remove('bloom'),1100)});
+const flow=document.getElementById('giftFlow'),invite=document.getElementById('giftInvite');document.getElementById('discoverGifts').addEventListener('click',()=>{flow.classList.add('show');requestAnimationFrame(()=>{document.querySelectorAll('.scratch-area').forEach(a=>{const c=a.querySelector('canvas');if(c){c.style.pointerEvents='auto'}})});document.getElementById('ticketSushi').scrollIntoView({behavior:'smooth',block:'center'})});
+function scratchSetup(ticket,next){
+ const key='ramito-scratch-v2-'+ticket.id,canvas=ticket.querySelector('canvas'),ctx=canvas.getContext('2d'),area=canvas.parentElement;
+ let drawing=false,done=false,strokes=0,painted=false;
+ function paint(){
+  const r=area.getBoundingClientRect();if(r.width<30||r.height<30)return false;
+  const d=Math.min(window.devicePixelRatio||1,2),w=Math.round(r.width*d),h=Math.round(r.height*d);
+  if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h}
+  ctx.setTransform(d,0,0,d,0,0);ctx.globalCompositeOperation='source-over';
+  const g=ctx.createLinearGradient(0,0,r.width,r.height);g.addColorStop(0,'#f8f6f8');g.addColorStop(.35,'#c8c2cb');g.addColorStop(.7,'#aaa4ae');g.addColorStop(1,'#eee9ef');
+  ctx.fillStyle=g;ctx.fillRect(0,0,r.width,r.height);
+  ctx.strokeStyle='rgba(255,255,255,.55)';ctx.lineWidth=1;
+  for(let x=-r.height;x<r.width;x+=17){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x+r.height,r.height);ctx.stroke()}
+  ctx.fillStyle='#665a6b';ctx.font='600 12px system-ui';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('RASCA AQUÍ ✦',r.width/2,r.height/2);
+  ctx.globalCompositeOperation='destination-out';painted=true;return true;
+ }
+ function reveal(){
+  if(done)return;done=true;localStorage.setItem(key,'1');canvas.style.transition='opacity .5s';canvas.style.opacity='0';
+  setTimeout(()=>{canvas.remove()},520);
+  if(next){next.hidden=false;requestAnimationFrame(()=>{paint();next.scrollIntoView({behavior:'smooth',block:'center'})})}
+ }
+ function scratch(e){
+  if(!drawing||done||!painted)return;
+  const r=canvas.getBoundingClientRect();if(!r.width||!r.height)return;
+  const x=e.clientX-r.left,y=e.clientY-r.top;
+  ctx.beginPath();ctx.arc(x,y,22,0,Math.PI*2);ctx.fill();
+  if(++strokes%8===0){
+   const pixels=ctx.getImageData(0,0,canvas.width,canvas.height).data;let cleared=0,total=0;
+   for(let i=3;i<pixels.length;i+=64){total++;if(pixels[i]<40)cleared++}
+   if(total&&cleared/total>.42)reveal();
+  }
+ }
+ canvas.addEventListener('pointerdown',e=>{if(done||!painted)return;drawing=true;canvas.setPointerCapture(e.pointerId);scratch(e);e.preventDefault()});
+ canvas.addEventListener('pointermove',e=>{if(drawing){scratch(e);e.preventDefault()}});
+ ['pointerup','pointercancel','lostpointercapture'].forEach(v=>canvas.addEventListener(v,()=>drawing=false));
+ if(localStorage.getItem(key)==='1'){done=true;canvas.remove();if(next)next.hidden=false}
+ else{
+  const observer=new ResizeObserver(()=>{if(!done&&area.getBoundingClientRect().width>30){paint();observer.disconnect()}});
+  observer.observe(area);requestAnimationFrame(()=>paint());
+ }
+}
+const dance=document.getElementById('ticketDance');scratchSetup(document.getElementById('ticketSushi'),dance);scratchSetup(dance,null);document.getElementById('replayLetter').onclick=()=>{letter.classList.add('open');letter.setAttribute('aria-hidden','false');letter.scrollIntoView({behavior:'smooth',block:'center'})};document.getElementById('replayGifts').onclick=()=>{flow.classList.add('show');flow.scrollIntoView({behavior:'smooth',block:'center'})};
+let deferredInstall=null;const box=document.getElementById('installPrompt'),action=document.getElementById('installAction'),later=document.getElementById('installLater');const standalone=matchMedia('(display-mode: standalone)').matches||navigator.standalone===true,ios=/iphone|ipad|ipod/i.test(navigator.userAgent);function closeBox(){box.classList.remove('show');localStorage.setItem('violet-install-prompt-dismissed','1')}if(!standalone&&!localStorage.getItem('violet-install-prompt-dismissed'))setTimeout(()=>box.classList.add('show'),1800);later.addEventListener('click',closeBox);box.addEventListener('click',e=>{if(e.target===box)closeBox()});addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstall=e});action.addEventListener('click',async()=>{if(deferredInstall){deferredInstall.prompt();await deferredInstall.userChoice;deferredInstall=null;closeBox()}else{document.getElementById('installDescription').innerHTML=ios?'En Safari, pulsa <strong>Compartir</strong> y elige <strong>Añadir a pantalla de inicio</strong>.':'Abre el menú del navegador y selecciona <strong>Instalar aplicación</strong> o <strong>Añadir a pantalla de inicio</strong>.';action.textContent='Entendido ♥';action.onclick=closeBox}});if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('/sw.js?v=5').catch(()=>{}));petals();
+</script></body></html>
