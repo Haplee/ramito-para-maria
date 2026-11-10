@@ -56,6 +56,10 @@ footer{text-align:center;padding-top:27px;color:#cbbbd080;font:9px system-ui;let
 .scratch-area canvas{position:absolute!important;inset:0!important;display:block!important;width:100%!important;height:100%!important;z-index:5!important;opacity:1!important;touch-action:none!important;pointer-events:auto!important;user-select:none!important;-webkit-user-select:none!important}
 .scratch-win{position:absolute!important;inset:0!important;z-index:1!important;display:grid!important;place-items:center!important}
 .scratch-help{position:relative;z-index:0}
+
+/* Ramo principal: SVG externo con proporción explícita para evitar que colapse en móviles. */
+.photo-frame{display:block;width:min(100%,430px);min-height:0}
+.photo-frame>.photo{display:block!important;width:100%!important;max-width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;aspect-ratio:520 / 530;object-fit:contain;object-position:center;visibility:visible!important;opacity:1!important;background:transparent;vertical-align:middle}
 </style></head>
 <body><div class="petals" aria-hidden="true"></div><main>
 <header>
@@ -64,68 +68,7 @@ footer{text-align:center;padding-top:27px;color:#cbbbd080;font:9px system-ui;let
 <p class="lead">Hoy quería dejarte algo bonito, aunque sea a través de una pantalla, para recordarte lo especial que eres para mí</p>
 </header>
 <figure class="photo-frame">
-<svg class="photo" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620" role="img" aria-label="Ramo de violetas moradas">
-<defs>
- <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff8eb"/><stop offset=".48" stop-color="#e7d6c4"/><stop offset="1" stop-color="#c9b09d"/></linearGradient>
- <linearGradient id="paper2" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#f9efe2"/><stop offset="1" stop-color="#d7c1ae"/></linearGradient>
- <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9eaf89"/><stop offset="1" stop-color="#405c48"/></linearGradient>
- <radialGradient id="petal" cx=".35" cy=".25"><stop stop-color="#ead4f4"/><stop offset=".48" stop-color="#a879c8"/><stop offset="1" stop-color="#56316f"/></radialGradient>
- <radialGradient id="dark"><stop stop-color="#d7a9e9"/><stop offset="1" stop-color="#48245e"/></radialGradient>
- <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="10"/></filter>
- <g id="flower">
-  <g fill="url(#petal)" stroke="#ead8f0" stroke-opacity=".35" stroke-width="1.2">
-   <ellipse cy="-19" rx="12" ry="23"/>
-   <ellipse cy="-19" rx="12" ry="23" transform="rotate(72)"/>
-   <ellipse cy="-19" rx="12" ry="23" transform="rotate(144)"/>
-   <ellipse cy="-19" rx="12" ry="23" transform="rotate(216)"/>
-   <ellipse cy="-19" rx="12" ry="23" transform="rotate(288)"/>
-  </g><circle r="5" fill="#f4d68e"/><circle r="2" fill="#56334d"/>
-  <path d="M0 3Q-3 13 0 22" stroke="#e9d4a5" stroke-width="1.2" fill="none" opacity=".7"/>
- </g>
- <g id="tiny"><g fill="#c6a0db"><circle r="5"/><circle cx="8" cy="-5" r="4"/><circle cx="-8" cy="-5" r="4"/><circle cx="0" cy="-13" r="4"/></g><circle r="2" fill="#f4d68e"/></g>
-</defs>
-<ellipse cx="300" cy="560" rx="190" ry="22" fill="#100b14" opacity=".24" filter="url(#shadow)"/>
-<!-- foliage -->
-<g fill="none" stroke="#597451" stroke-width="5" stroke-linecap="round">
- <path d="M300 510Q245 350 150 205M300 510Q330 330 450 180M300 510Q280 300 280 140M300 510Q390 350 510 270M300 510Q210 360 85 300"/>
-</g>
-<g fill="url(#leaf)" stroke="#b0bf9b" stroke-opacity=".25" stroke-width="1.5">
- <path d="M165 254Q76 236 76 158Q151 155 165 254Z"/><path d="M194 314Q100 330 61 269Q122 222 194 314Z"/>
- <path d="M434 242Q450 152 526 140Q534 220 434 242Z"/><path d="M397 321Q487 286 535 343Q472 390 397 321Z"/>
- <path d="M268 225Q204 157 233 93Q300 122 268 225Z"/><path d="M338 280Q383 194 451 207Q424 281 338 280Z"/>
- <path d="M235 378Q143 363 128 431Q206 453 235 378Z"/><path d="M365 386Q444 347 485 411Q415 463 365 386Z"/>
- <path d="M285 340Q220 280 250 230Q314 268 285 340Z"/>
-</g>
-<!-- tiny filler flowers -->
-<g opacity=".95">
- <use href="#tiny" transform="translate(160 190) scale(1.2)"/><use href="#tiny" transform="translate(185 155) scale(.9)"/>
- <use href="#tiny" transform="translate(415 170) scale(1.2)"/><use href="#tiny" transform="translate(448 145) scale(.8)"/>
- <use href="#tiny" transform="translate(270 110) scale(1.05)"/><use href="#tiny" transform="translate(305 95) scale(.8)"/>
- <use href="#tiny" transform="translate(105 285) scale(.9)"/><use href="#tiny" transform="translate(500 285) scale(.9)"/>
-</g>
-<!-- violet blooms -->
-<g>
- <use href="#flower" transform="translate(205 250) rotate(-15) scale(1.05)"/>
- <use href="#flower" transform="translate(285 205) rotate(12) scale(1.2)"/>
- <use href="#flower" transform="translate(375 230) rotate(-8) scale(1.12)"/>
- <use href="#flower" transform="translate(130 310) rotate(17) scale(.95)"/>
- <use href="#flower" transform="translate(235 330) rotate(-8) scale(1.15)"/>
- <use href="#flower" transform="translate(340 320) rotate(14) scale(1.2)"/>
- <use href="#flower" transform="translate(450 315) rotate(-12) scale(1.0)"/>
- <use href="#flower" transform="translate(175 390) rotate(8) scale(.9)"/>
- <use href="#flower" transform="translate(285 405) rotate(-10) scale(1.12)"/>
- <use href="#flower" transform="translate(400 400) rotate(16) scale(1.0)"/>
-</g>
-<!-- wrapper -->
-<path d="M100 345L245 470L300 580L356 470L505 345L440 530L300 610L160 530Z" fill="url(#paper)" stroke="#fff3e4" stroke-width="3"/>
-<path d="M100 345Q190 400 245 470L300 580L160 530Z" fill="url(#paper2)" opacity=".85"/>
-<path d="M505 345Q410 410 356 470L300 580L440 530Z" fill="#cdb7a7" opacity=".55"/>
-<path d="M160 530Q300 550 440 530L300 610Z" fill="#bda18f" opacity=".45"/>
-<!-- ribbon -->
-<path d="M292 500C240 450 185 466 210 510C232 546 278 523 300 507C322 523 368 546 390 510C415 466 360 450 308 500" fill="none" stroke="#a77cb0" stroke-width="15" stroke-linecap="round"/>
-<path d="M300 505Q270 558 246 587Q290 575 309 517M307 508Q340 555 370 578Q335 570 299 519" fill="#b98ac2" stroke="#e3c6e7" stroke-width="2"/>
-<circle cx="300" cy="506" r="13" fill="#8f659a" stroke="#e5c9e8" stroke-width="3"/>
-</svg>
+<img class="photo" src="/bouquet.svg" alt="Ramo de violetas moradas" width="520" height="530" fetchpriority="high" decoding="async">
 <figcaption class="photo-label">Un abrazo convertido en flores</figcaption>
 </figure>
 <p class="note">No son solo flores, es mi manera de mandarte un abrazo y sacarte una sonrisa</p>

@@ -1,21 +1,22 @@
-# Nota de recuperación
+# Nota de recuperación y ajuste del ramo
 
-Fuente principal: despliegue de producción `ramito-para-maria-9nov` en Vercel, consultado el 10-11-2026.
+Fuente del proyecto: despliegue de producción `ramito-para-maria-9nov` en Vercel, consultado el 10-11-2026.
 
-Archivos recuperados del despliegue:
-- index.html
-- bouquet.svg
-- favicon.svg
-- app-icon.svg
-- manifest.webmanifest
-- sw.js
+Archivos recuperados del despliegue o de los recursos disponibles:
+- `index.html`
+- `bouquet.svg`
+- `favicon.svg`
+- `app-icon.svg`
+- `manifest.webmanifest`
+- `sw.js`
+- `apple-touch-icon.png`
 
-Recurso recuperado del espacio de trabajo:
-- apple-touch-icon.png
-- assets/music/CONTIGO - Lucho RK (Visualizer).mp3
+Ajuste realizado para que el ramo se muestre de forma fiable:
+- La página utiliza ahora el archivo visual `bouquet.svg` directamente como imagen principal, en lugar de la variante SVG inline anterior.
+- La imagen declara dimensiones y relación de aspecto 520:530.
+- El CSS de la imagen principal fuerza ancho completo, altura automática, visibilidad y ausencia de altura mínima heredada.
+- El service worker pasa a `ramito-maria-v6` y precarga expresamente el ramo y los iconos para su disponibilidad offline.
 
-Limitaciones conocidas:
-- No aparece ningún archivo MP3 en el árbol de archivos del despliegue consultado.
-- El HTML desplegado no contiene un elemento de audio ni integra reproducción musical.
-- La ruta `/apple-touch-icon.png` respondía 404 en el despliegue, aunque existía un icono local; se incorpora este último para completar la carpeta.
-- El paquete es una recuperación del código desplegado, no una corrección certificada de todos los problemas de interacción móvil.
+La ilustración se ha validado como SVG XML y se ha comprobado que la página referencia `/bouquet.svg`.
+
+La música se deja expresamente para la siguiente sesión: no se incluye MP3 ni lógica de reproducción en esta entrega.

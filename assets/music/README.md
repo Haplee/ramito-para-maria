@@ -1,5 +1,3 @@
-# Música
+# Música (pendiente)
 
-Archivo proporcionado por el usuario: `CONTIGO - Lucho RK (Visualizer).mp3`.
-
-La versión del sitio recuperada no contiene todavía lógica de reproducción. El archivo se conserva en el paquete para no perderlo. No subirlo a un repositorio público ni redistribuirlo sin disponer de los derechos necesarios.
+La integración de la canción se realizará en la siguiente sesión. No se incluye el MP3 en este paquete. Mantener esta carpeta preparada para añadir el recurso cuando se configure la reproducción y el punto de parada.
